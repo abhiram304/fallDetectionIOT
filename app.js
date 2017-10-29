@@ -27,6 +27,9 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+
+
+app.get('/sendAnamoly', user.getAnamoly);
 app.get('/', routes.index);
 app.get('/dashboard', user.getDashboard);
 app.get('/users', user.list);
