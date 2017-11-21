@@ -4,11 +4,11 @@ var mysql = require('mysql');
 //Put your mysql configuration settings - user, password, database and port
 function getConnection(){
 	var connection = mysql.createConnection({
-		 host     : '',
+		 host     : 'iot-masters-project.corfudexl5lh.us-west-1.rds.amazonaws.com',
 			/*host     : 'deary.c8be4rywp9ft.us-west-2.rds.amazonaws.com',*/
-		    user     : '',
-		    password : '',
-		    database : '',
+		    user     : 'Hemanth',
+		    password : 'Pikachu123',
+		    database : 'IoT_database',
 		    port	 : 3306
 	});
 	return connection;
