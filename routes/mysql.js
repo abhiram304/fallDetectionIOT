@@ -1,5 +1,5 @@
 var ejs= require('ejs');
-var mysql = require('mysql');
+//var mysql = require('mysql');
 
 //Put your mysql configuration settings - user, password, database and port
 function getConnection(){
