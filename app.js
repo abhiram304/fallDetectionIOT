@@ -8,6 +8,7 @@ var express = require('express')
   , user = require('./routes/user')
   , http = require('http')
   , path = require('path');
+var patient = require('./routes/patient');
 
 var app = express();
 
@@ -34,6 +35,16 @@ app.get('/', routes.index);
 app.get('/dashboard', user.getDashboard);
 app.get('/users', user.list);
 app.get('/analyze', user.receiveData);
+app.get('/userProfile', user.getUserProfile);
+app.get('/reports', user.getReports);
+app.get('/addPatient', user.getAddPatient);
+app.get('/dashboardPatient', patient.getDashboard);
+app.get('/patientLog', patient.getPatientLog);
+app.get('/emergencyContact', patient.getEmergencyContact);
+app.get('/patientSettings', patient.getPatientSettings);
+
+
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
