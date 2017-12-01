@@ -24,8 +24,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
+<style>.glyphicon {
+    font-size: 50px;
+   
+}
+.card{
+ border-radius: 1000px;
+     padding: 60px;
+    width: 240px;
+    height: 230px; 
+}
+</style>
 <body>
 
 	<div class="wrapper">
@@ -132,81 +143,70 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-5">
-							<a href="#"  >
-							<div class="card">
-								<div class="card-header card-chart" data-background-color="grey">
-								<!––	<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/273583-200.png" align = "middle" class="img-responsive"> -->
-								</div>
-								<div class="card-content">
-									<h4 class="title">Patient Log</h4>
+							<div align="center">
+							<a href="/"  >
+							<div class="card" style="border: 10px solid #2bede7;
+ background: #FFFFFF">
+							
+  <div class="card-block">
+    <div align="center"><h4 class="card-title"></h4>
+    <h6 class="card-subtitle mb-2 text-muted"></h6>
+    <span class="glyphicon glyphicon-file" style="color : #2bede7;"></span>
+    </div>
+  </div>
 
-								</div>
-								<div class="card-footer">
-									<div class="stats">
-										
-											<img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/forward-128.png"  style="height: 10px; width: 10px" class="image" />
-										
-									</div>
-								</div>
+							</div>
+							
+							</a>
+							<h3>Patient Log</h3>
+							</div>
+						</div>
+
+						<div class="col-md-5">
+							<div align="center">
+							<a href="/addPatient">
+							<div class="card" style="border: 10px solid #2bede7;
+ background: #FFFFFF">
+							<div class="card-block">
+    <div align="center"><h4 class="card-title"></h4>
+    <h6 class="card-subtitle mb-2 text-muted"></h6>
+    <span class="glyphicon glyphicon-plus"  style="color:  #2bede7"></span>
+    </div>
+  </div>
+								
 							</div>
 							</a>
-						</div>
-
-						<div class="col-md-5">
-							<div class="card">
-								<div class="card-header card-chart" data-background-color="red">
-									<!–– <img src="https://myareecarhire.com.au/wp-content/uploads/2013/11/1385750800_user_add.png" align = "middle" class="img-responsive" 	> -->
-
-									</div>
-								<div class="card-content">
-									<h4 class="title">Add Patients</h4>
-
-								</div>
-								<div class="card-footer">
-									<div class="stats">
-										<a href="/addPatient" id="start"  >
-											<img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/forward-128.png"  style="height:10px; width: 10px" class="image" />
-										</a>
-									</div>
-								</div>
-
+							<h3>Add Patient</h3>
 							</div>
 						</div>
 
 						<div class="col-md-5">
-							<div class="card">
-								<div class="card-header card-chart" data-background-color="orange">
-									<!–– <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/175627-200.png" align = "middle" class="img-responsive" class="image" /> -->
-								</div>
-								<div class="card-content">
-									<h4 class="title">Analytics</h4>
-								</div>
-								<div class="card-footer">
-									<div class="stats">
-										<a href="/"  >
-											<img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/forward-128.png"  style="height:10px; width: 10px" class="image" />
-										</a>
-									</div>
-								</div>
-
+							<div align="center">
+							<div class="card"  style="border: 10px solid #1fedc4;
+ background: #FFFFFF">
+							<div class="card-block">
+    <div align="center"><h4 class="card-title"></h4>
+    <h6 class="card-subtitle mb-2 text-muted"></h6>
+    <span class="glyphicon glyphicon-stats" style="color: #1fedc4"></span>
+    </div>
+  </div>						
+							</div>
+							<h3>Analytics</h3>
 							</div>
 						</div>
 
 						<div class="col-md-5">
-							<div class="card">
-								<div class="card-header card-chart" data-background-color="green">
-								<!–– <img src= "https://cdn1.iconfinder.com/data/icons/convention-and-exhibition-center/100/Agenda-512.png" align = "middle" class="img-responsive"  class="image" /> -->
-								</div>
-								<div class="card-content">
-									<h4 class="title">Appointments</h4>
-								</div>
-								<div class="card-footer">
-									<div class="stats">
-										<a href="#" id="start" onclick="document.location=this.id+'.html';return false;" >
-											<img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/forward-128.png"  style="height:10px; width: 10px" class="image" />
-										</a>
-									</div>
-								</div>
+							<div align="center">
+							<div class="card" style="border: 10px solid #1fedc4;
+ background: #FFFFFF" >
+			<div class="card-block">
+    <div align="center"><h4 class="card-title"></h4>
+    <h6 class="card-subtitle mb-2 text-muted"></h6>
+    <span class="glyphicon glyphicon-tasks" style="color: #1fedc4"></span>
+    </div>
+  </div>					
+							</div>
+							<h3>Appointments</h3>
 							</div>
 						</div>
 					</div>
