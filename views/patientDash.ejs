@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon.png" />
+	<link rel="icon" type="image/png" href="./img/favicon.png" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Health Care Management</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Bootstrap core CSS     -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--  Material Dashboard CSS    -->
+    <link href="./css/material-dashboard.css" rel="stylesheet"/>
+
+    
+
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>.glyphicon {
+    font-size: 50px;
+   
+}
+.card{
+ border-radius: 1000px;
+     padding: 60px;
+    width: 240px;
+    height: 230px; 
+}
+</style>
+<body>
+
+	<div class="wrapper">
+
+	    <div class="sidebar" data-color="blue" data-image="https://www.kingsfund.org.uk/sites/files/kf/media/8-technologies-1-smartphone.png">
+
+
+			<div class="logo">
+					<p style="font-family: 'Helvetica';color: #00a5bb" >My Medic</p>
+								</div>
+
+
+	    	<div class="sidebar-wrapper">
+	            <ul class="nav">
+	                <li class="active">
+	                    <a href="dashboard.html">
+	                        <i class="material-icons"></i>
+	                        <p>Dashboard</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="/userProfile">
+	                        <i class="material-icons"></i>
+	                        <p>User Profile</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="/reports">
+	                        <i class="material-icons"></i>
+	                        <p>Reports</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="calendar.html">
+	                        <i class="material-icons"></i>
+	                        <p>Calendar</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="icons.html">
+	                        <i class="material-icons"></i>
+	                        <p>Settings</p>
+	                    </a>
+	                </li>
+	            </ul>
+	    	</div>
+	    </div>
+
+	    <div class="main-panel">
+			<nav class="navbar navbar-transparent navbar-absolute">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Organization Name</a>
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="material-icons">notifications</i>
+									<span class="notification">4</span>
+									<p class="hidden-lg hidden-md">Notifications</p>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">You have a new patient</a></li>
+									<li><a href="#">You have appointment at 4:30</a></li>
+									<li><a href="#">Another Notification</a></li>
+									<li><a href="#">Another One</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	 							   <i class="material-icons">person</i>
+	 							   <p class="hidden-lg hidden-md">Profile</p>
+		 						</a>
+								<ul class="dropdown-menu">
+
+
+							<li><a href="s.html" onclick="logout()">Log Out</a></li>
+						</ul>
+						</li>
+
+					</ul>
+
+						<form class="navbar-form navbar-right" role="search">
+							<div class="form-group  is-empty">
+								<input type="text" class="form-control" placeholder="Search">
+								<span class="material-input"></span>
+							</div>
+							<button type="submit" class="btn btn-white btn-round btn-just-icon" >
+								<i class="material-icons" >search</i><div class="ripple-container"></div>
+							</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+
+			<div class="content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-5">
+							<div align="center">
+							<a href="/fallLogs"  >
+							<div class="card" style="border: 10px solid #2bede7;
+ background: #FFFFFF">
+							
+  <div class="card-block">
+    <div align="center"><h4 class="card-title"></h4>
+    <h6 class="card-subtitle mb-2 text-muted"></h6>
+    <span class="glyphicon glyphicon-file" style="color : #2bede7;"></span>
+    </div>
+  </div>
+
+							</div>
+							
+							</a>
+							<h3>Patient Log</h3>
+							</div>
+						</div>
+
+						
+						<div class="col-md-5">
+						<a href='/'>
+							<div align="center">
+							<div class="card"  style="border: 10px solid #1fedc4;
+ background: #FFFFFF">
+							<div class="card-block">
+    <div align="center"><h4 class="card-title"></h4>
+    <h6 class="card-subtitle mb-2 text-muted"></h6>
+    <span class="glyphicon glyphicon-stats" style="color: #1fedc4"></span>
+    </div>
+  </div>						
+  </a>
+							</div>
+							<h3>Analytics</h3>
+							</div>
+						</div>
+
+						
+					</div>
+		</div>
+	</div>
+
+</body>
+
+	
+</script>
+</html>

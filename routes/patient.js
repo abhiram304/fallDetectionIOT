@@ -1,6 +1,6 @@
 exports.getDashboard = function(req, res){
 		//var data= req.param("value");  
-		res.render('patientDashboard');
+		res.render('patientDash');
 		};
 		
 		
