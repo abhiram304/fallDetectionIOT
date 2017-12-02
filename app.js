@@ -9,7 +9,7 @@ var express = require('express')
   , http = require('http')
   , path = require('path');
 var patient = require('./routes/patient');
-
+var dbPointer = require('./routes/db');
 var app = express();
 
 // all environments
@@ -43,7 +43,7 @@ app.get('/patientLog', patient.getPatientLog);
 app.get('/emergencyContact', patient.getEmergencyContact);
 app.get('/patientSettings', patient.getPatientSettings);
 app.get('/appointments', user.getAppointments);
-
+app.get('/sendToDB', dbPointer.saveToDB);
 
 
 http.createServer(app).listen(app.get('port'), function(){
