@@ -42,6 +42,7 @@ app.get('/dashboardPatient', patient.getDashboard);
 app.get('/patientLog', patient.getPatientLog);
 app.get('/emergencyContact', patient.getEmergencyContact);
 app.get('/patientSettings', patient.getPatientSettings);
+app.get('/appointments', user.getAppointments);
 
 
 

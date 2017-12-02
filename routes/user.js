@@ -41,3 +41,9 @@ exports.getAnamoly = function(req, res){
 						//var data= req.param("value");  
 						res.render('addpatient');
 						};
+						
+						
+						exports.getAppointments = function(req, res){
+							//var data= req.param("value");  
+							res.render('appointments.ejs');
+							};
