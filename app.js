@@ -44,7 +44,7 @@ app.get('/emergencyContact', patient.getEmergencyContact);
 app.get('/patientSettings', patient.getPatientSettings);
 app.get('/appointments', user.getAppointments);
 app.get('/sendToDB', dbPointer.saveToDB);
-
+app.get('/fallLogs', user.getFallLogs);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

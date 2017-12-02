@@ -2,7 +2,7 @@
 /*
  * GET users listing.
  */
-
+var mysql = require('./mysql');
 exports.list = function(req, res){
   res.send("respond with a resource");
 };
@@ -47,3 +47,27 @@ exports.getAnamoly = function(req, res){
 							//var data= req.param("value");  
 							res.render('appointments.ejs');
 							};
+							
+							
+							
+							
+							
+							exports.getFallLogs = function(req, res){
+								//var data= req.param("value");  
+								var queryStr = "SELECT * FROM `iotdb`.`logs` ";
+								
+								mysql.fetchData(function(err, results) {
+								
+									console.log(JSON.stringify(results));
+									if (err) {
+									throw err;
+									} else {
+									//res.redirect('/saveCardDetails?Userid='+detailsP.Userid);
+										res.render('fallLogs',{"results":results});
+									}
+									}, queryStr);
+								
+								
+							
+								};
+		
